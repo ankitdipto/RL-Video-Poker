@@ -1,6 +1,16 @@
-# Video Poker AI Simulator
+# Approximating Perfection: An RL Approach to Video Poker
 
-This project implements a Video Poker simulator with reinforcement learning agents. The system includes a Deep Q-Network (DQN) agent and an optimal brute-force agent for comparison.
+This project explores the application of Reinforcement Learning (RL) to the game of Video Poker. Video Poker presents a unique challenge: it is a game of chance, but it also has a mathematically solvable optimal strategy. This makes it an ideal environment to benchmark the performance of an RL agent against a perfect player.
+
+The core of this project is a comparison between two agents:
+
+1.  **An Optimal Agent:** This agent uses a pre-computed, brute-force solution that represents the perfect, mathematically optimal strategy for every possible hand. It serves as the "ground truth" for the best possible performance.
+
+2.  **A Deep Q-Network (DQN) Agent:** This is a reinforcement learning agent that learns to play the game from scratch, with no prior knowledge of the rules or strategy. Its goal is to learn a policy that maximizes its score through trial and error.
+
+By training the DQN agent and comparing its performance to the optimal agent, this project aims to answer the question: **How close can a model-free reinforcement learning agent get to the perfect strategy in a complex, solvable game?**
+
+This repository allows for training the DQN agent, evaluating both agents, and even playing the game yourself to see how your decisions stack up against an AI or a Perfect Agent.
 
 ## Setup
 
